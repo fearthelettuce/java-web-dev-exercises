@@ -1,6 +1,6 @@
 package org.launchcode.java.demos.lsn1datatypes;
 
-public class Message {
+class Message {
 
     public static String getMessage(String lang) {
 
@@ -8,6 +8,8 @@ public class Message {
             return "¡Hola, Mundo!";
         } else if (lang.equals("fr")) {
             return "Bonjour, le monde!";
+        } else if (lang.equals("butt")) {
+            return "My butt";
         } else {
             return "Hello, World!";
         }

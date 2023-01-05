@@ -5,6 +5,9 @@ package org.launchcode.java.demos;
  */
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello, World");
+        String stringy = "Hello";
+        String stringy2 = " World";
+        stringy = stringy.concat(" World");
+        System.out.println(stringy);
     }
 }
