@@ -11,5 +11,6 @@ public class MPG {
         double gallonsUsed = input.nextDouble();
         double mpg = milesDriven / gallonsUsed;
         System.out.println(mpg);
+        input.close();
     }
 }

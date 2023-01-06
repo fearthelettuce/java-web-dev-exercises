@@ -12,6 +12,7 @@ public class AreaOfRectangle {
         double rectWidth = input.nextDouble();
         double area = rectLen * rectWidth;
         System.out.println(area);
+        input.close();
     }
 
 }

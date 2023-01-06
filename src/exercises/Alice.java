@@ -9,5 +9,8 @@ public class Alice {
         String searchString = input.nextLine();
         boolean foundInString = inputText.toLowerCase().contains(searchString.toLowerCase());
         System.out.println(foundInString);
+        input.close();
+
+
     }
 }
