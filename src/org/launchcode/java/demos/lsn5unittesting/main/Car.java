@@ -1,6 +1,7 @@
 package org.launchcode.java.demos.lsn5unittesting.main;
 
-public class Car {
+public class
+Car {
 
     private String make;
     private String model;
@@ -83,6 +84,12 @@ public class Car {
         double gallonsUsed = milesAbleToTravel / this.milesPerGallon;
         this.gasTankLevel = this.gasTankLevel - gallonsUsed;
         this.odometer += milesAbleToTravel;
+    }
+    public void addGas(double gallonsOfFuel) {
+        if(this.getGasTankLevel() + gallonsOfFuel > this.getGasTankSize()) {
+            throw new IllegalArgumentException("Can't exceed tank size, please get a gas can.");
+        }
+        this.setGasTankLevel(this.getGasTankLevel() + gallonsOfFuel);
     }
 
 }
